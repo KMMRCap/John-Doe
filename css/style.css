@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "Vazir";
+  src: url(../fonts/Vazir.eot);
+  src: url(../fonts/Vazir.ttf) format("embedded-opentype");
+  src: url(../fonts/Vazir.woff) format("truetype");
+  src: url(../fonts/Vazir.woff2) format("woff2");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: ltr;
+  text-align: left !important;
+  font-family: Helvetica !important;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+#home {
+  background-color: black;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+#home .navbar-nav a {
+  font-weight: 200;
+}
+
+#home .navbar-nav a:hover {
+  border-bottom: 2px solid #eaad13;
+}
+
+#home .navbar-nav a.active {
+  border-bottom: 2px solid #eaad13;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #222;
+  z-index: 99;
+  transition: 0.5s ease;
+}
+
+#home .row a {
+  padding: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  transition: .3s ease;
+}
+
+#home .fa-gear {
+  font-size: 25px;
+  padding: 5px !important;
+  animation: rotate 2s infinite linear;
+  -webkit-animation: rotate 2s infinite linear;
+  -moz-animation: rotate 2s infinite linear;
+  -o-animation: rotate 2s infinite linear;
+}
+
+.gear-box{
+  z-index: 9999;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.mode-cont {
+  display: flex;
+  transition: .5s ease;
+}
+
+.mode-cont div{
+  position: absolute;
+  right: -40px;
+  height: 42px;
+  z-index: 999;
+  transition: .5s ease;
+}
+
+.mode-cont div.active{
+  right: 38px;
+}
+
+.fixed-gear{
+  position: fixed;
+  top: 10px;
+  right: 0;
+  z-index: 999999;
+}
+
+.mode-cont a:hover{
+  background: #222;
+  border-radius: 0 !important;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.site-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.text-writer:after {
+  content: "";
+  border-right: 2px solid red;
+  padding-left: 1px;
+  animation: blink 0.4s infinite ease;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#about-me img {
+  border-right: 4px solid #eaad13;
+  border-bottom: 4px solid #eaad13;
+  border-radius: 3px;
+}
+
+.spliter {
+  width: 50%;
+  height: 3px;
+  border: none;
+  background-color: #eaad13;
+}
+
+#about-me p {
+  font-size: 13px;
+}
+
+#about-me .btn-warning {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.resume-cont {
+  box-shadow: 0 0 5px #888;
+}
+
+.resume-cont .card {
+  font-size: 15px;
+  background-color: #e6e6e6;
+}
+
+.split-1 {
+  width: 4px;
+  height: 45px;
+  background: #e6e6e6;
+  border: 0;
+}
+
+.split-2 {
+  width: 15px;
+  height: 15px;
+  background: #eaad13;
+  border-radius: 50%;
+  border: 0;
+}
+
+.split-3 {
+  width: 4px;
+  height: 175px;
+  background: #e6e6e6;
+  border: 0;
+}
+
+.split-5 {
+  width: 4px;
+  height: 167px;
+  background: #e6e6e6;
+  border: 0;
+}
+
+.split-7 {
+  width: 4px;
+  height: 190px;
+  background: #e6e6e6;
+  border: 0;
+}
+
+#skills .card {
+  box-shadow: 0 0 8px #888888;
+}
+
+.w-98 {
+  width: 98%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-83 {
+  width: 83%;
+}
+
+.w-54 {
+  width: 54%;
+}
+
+#works .nav a {
+  border-radius: 10px;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+#works .nav li a:hover {
+  background: #eaad13;
+}
+
+#works .nav a.active {
+  background: #eaad13;
+}
+
+#contact-me {
+  background-color: #1a1a1a;
+}
+
+#contact-me p {
+  font-size: 13px;
+}
+
+#contact-me textarea {
+  min-height: 150px;
+  max-height: 150px;
+}
+
+#contact-me form input,
+#contact-me form textarea {
+  border-radius: 0;
+  border-color: #fff;
+}
+
+#contact-me .send {
+  position: absolute;
+  border-radius: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 0;
+  padding: 0;
+  border-left: 60px solid #1a1a1a;
+  border-bottom: 60px solid #eaad13;
+}
+
+.send i {
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+#contact-me .col-11 i {
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+#contact-me .col-11 i:hover,
+#contact-me .col-11 i:focus {
+  color: #eaad13;
+}
+
+#contact-me form input:focus,
+#contact-me form textarea:focus {
+  border-color: #eaad13;
+}
+
+.fa-copyright a {
+  font-size: 17px;
+}
