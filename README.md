@@ -1,5 +1,6 @@
 # John-Doe
 Simple personal website
+Responsive !!!
 
 Using : Html, Css, Bootstrap, JavaScript and JQuery
 
