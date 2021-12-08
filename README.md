@@ -1,6 +1,5 @@
 # John-Doe
-Simple personal website
-Responsive !!!
+Responsive Personal Website
 
 Using : Html, Css, Bootstrap, JavaScript and JQuery
 
